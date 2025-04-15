@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment"
+    android:backgroundTint="#F7F7F7"
+    >
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/sora_medium"
+        android:text="Order"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/Order"
+        />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delivery_option_background"
+        app:layout_constraintTop_toBottomOf="@id/Order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="68px"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="135dp"
+                android:layout_height="35dp"
+                android:text="Deliver"
+                android:fontFamily="@font/sora_medium"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Pick Up"
+                android:textAllCaps="false"
+                android:fontFamily="@font/sora_medium"
+                android:textSize="16sp"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                />
+
+        </LinearLayout>
+        
+    </FrameLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
