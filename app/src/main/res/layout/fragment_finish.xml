@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-
+        android:id="@+id/priceDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"

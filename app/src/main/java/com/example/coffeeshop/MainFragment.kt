@@ -28,8 +28,16 @@ class MainFragment : Fragment() {
 
         val orderButton: AppCompatButton = view.findViewById(R.id.OrderButton)
         orderButton.setOnClickListener {
+            val bundle = Bundle().apply {
+                putDouble("price", 5.53)
+            }
+
+            val finishFragment = finishFragment().apply {
+                arguments = bundle
+            }
+
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer,finishFragment())
+                .replace(R.id.fragmentContainer,finishFragment)
                 .commit()
         }
     }
